@@ -192,6 +192,13 @@ a {
     width: 35%;
   }
 }
+@media only screen and (max-width: 568px) {
+  .header nav {
+    height: 50px;
+    width: 30%;
+  }
+}
+/* iPhone 5 sizes, landscape and portrait */
 @media all and (max-width: 320px) {
   .header nav {
     height: 50px;
