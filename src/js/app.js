@@ -1,10 +1,9 @@
-$(function() {
-  $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 500) {
-          $(".header").addClass('smaller');
-      } else {
-          $(".header").removeClass("smaller");
-      }
-  });
-});
+function hamburgerMenu() {
+    var x = document.getElementById("topNav");
+    console.log(x)
+    if (x.className === "header") {
+      x.className += " responsive";
+    } else {
+      x.className = "header";
+    }
+  }
