@@ -192,3 +192,9 @@ a {
     width: 35%;
   }
 }
+@media all and (max-width: 320px) {
+  .header nav {
+    height: 50px;
+    width: 40%;
+  }
+}
