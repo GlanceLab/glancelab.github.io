@@ -17,6 +17,7 @@
 
 <body>
   <div id="particles">
+    <a href="#" class="sf-back-to-top"><span class="arrow"></span>Top</a>
     <div class="header" id="topNav">
       <h1 id="logo"> GlanceLab </h1>
       <nav>
@@ -31,6 +32,29 @@
       <p>Glance To The Future</p>
     </div>
   </div>
+  <div id="page-content">
+    <section>
+
+    </section>
+  </div>
+  <script>
+    var amountScrolled = 300;
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > amountScrolled) {
+        $('a.sf-back-to-top').fadeIn('slow');
+      } else {
+        $('a.sf-back-to-top').fadeOut('slow');
+      }
+    });
+
+    $('a.sf-back-to-top').click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 300);
+      return false;
+    });
+  </script>
 </body>
 
 </html>
