@@ -102,7 +102,7 @@ a {
   transition: height 0.3s;
 }
 .header h1#logo {
-  display: inline=block;
+  /* display: inline=block; */
   height: 50px;
   float: left;
   margin-left: 50px;
@@ -117,12 +117,12 @@ a {
   transition: all 0.3s;
 }
 .header nav {
-  display: inline=block;
+  /* display: inline=block; */
   float: right;
   margin-right: 50px;
 }
 .header nav a {
-  line-height: 100px;
+  line-height: 90px;
   margin-left: 20px;
   color: #262626;
   font-weight: 550;
