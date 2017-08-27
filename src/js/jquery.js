@@ -2,6 +2,7 @@ const amountScrolled = 300;
 
 $(document).ready(function() {
   $(".header").hide();
+
   setTimeout(function() {
     $(".header").fadeIn();
   }, 2500);
@@ -14,15 +15,20 @@ $(document).ready(function() {
     }
   });
 
-  $("a.sf-back-to-top").click(function() {
-    $("html, body").animate(
-      {
-        scrollTop: 0
-      },
-      300
-    );
-    return false;
-  });
+  // not using in favor of messengerify
+  // $("a.sf-back-to-top").click(function() {
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0
+  //     },
+  //     300
+  //   );
+  //   return false;
+  // });
+
+  $(".nav-item").on("click", function() {
+    $(".header").removeClass("responsive")
+  })
 
   // scroll to target
   $(".scroll").click(function() {
