@@ -167,7 +167,8 @@ a {
     display: block;
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 0px;
+    width: 40px;
   }
   .header.responsive {
     position: fixed;
