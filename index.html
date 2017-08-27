@@ -21,7 +21,7 @@
     <div class="header" id="topNav">
       <h1 id="logo"> GlanceLab </h1>
       <nav>
-        <a href="">About Us</a>
+        <a class="scroll" target="story">Our Story</a>
         <a href="">Vision</a>
         <a href="">Contact Us</a>
         <a href="javascript:void(0);" class="hamburgerMenu" onclick="hamburgerMenu()">&#9776;</a>
@@ -33,10 +33,18 @@
     </div>
   </div>
   <div id="page-content">
-    <section>
-
+    <section class="section-content" id="story">
+      <div class="section-header">
+        <h1 class="section-header-title">Our Story</h1>
+        <p class="section-content-para">In these complex, quickly-changing economic times, GlanceLab understands the importance of providing value in litigation
+          and transactional matters. We dedicate ourselves to provide decision making solution with data-driven algorithms
+          such as Machine Learning and Deep Learning.</p>
+      </div>
     </section>
   </div>
+  <footer>
+
+  </footer>
   <script>
     var amountScrolled = 300;
 
@@ -53,6 +61,13 @@
         scrollTop: 0
       }, 300);
       return false;
+    });
+
+    // scroll to target
+    $('.scroll').click(function () {
+      $('body').animate({
+        scrollTop: eval($('#' + $(this).attr('target')).offset().top - 65)
+      }, 750);
     });
   </script>
 </body>
