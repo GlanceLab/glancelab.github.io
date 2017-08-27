@@ -170,7 +170,7 @@ a {
     right: 5px;
   }
   .header.responsive {
-    position: absolute;
+    position: fixed;
     height: 250px;  /* menu height */
   }
   .header.responsive a.hamburgerMenu {
