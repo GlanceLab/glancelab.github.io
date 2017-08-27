@@ -25,7 +25,7 @@
 <body>
   <div id="particles">
     <a href="#" class="sf-back-to-top"><span class="arrow"></span>Top</a>
-    <div class="header" id="topNav">
+    <div class="header">
       <h1 id="logo"> GlanceLab </h1>
       <nav>
         <a class="scroll" target="story">Our Story</a>
@@ -34,7 +34,7 @@
         <a href="javascript:void(0);" class="hamburgerMenu" onclick="hamburgerMenu()">&#9776;</a>
       </nav>
     </div>
-    <div  class="typewriter" id="intro">
+    <div class="typewriter" id="intro">
       <h1 id="mid">Connect The Dots</h1>
       <p>Glance Into The Future</p>
     </div>
@@ -46,7 +46,8 @@
         <p class="section-content-para">In these complex, quickly-changing economic times, GlanceLab understands the importance of providing value in litigation
           and transactional matters. We are often addressed as the Sherlock Holmes of Malaysia because of the way we do things.
           <br>By connecting the dots with Machine Learning, we are able to identify critical ways to improve sales and internal
-          matters.</p>
+          matters.
+        </p>
       </div>
     </section>
   </div>
@@ -89,7 +90,15 @@
   </footer>
 
   <script>
-    var amountScrolled = 300;
+    const amountScrolled = 300;
+
+    $(document).ready(function () {
+      $(".header").hide();
+      setTimeout(function () {
+        $('.header').fadeIn();
+      }, 2500);
+    });
+
 
     $(window).scroll(function () {
       if ($(window).scrollTop() > amountScrolled) {
