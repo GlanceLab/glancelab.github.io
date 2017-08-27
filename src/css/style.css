@@ -149,15 +149,16 @@ a {
     font-size: 26px;
   }
   .header nav {
-    display: block;
+    display: inline-block;
     float: none;
-    height: 50px;
-    width: 20%;
+    height: 200px;
+    width: 100%;
     line-height: 50px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
   }
   .header nav a {
+    display: block;
     line-height: 50px;
     margin: 0 10px;
   }
@@ -176,28 +177,7 @@ a {
     position: absolute;
   }
   .header.responsive a {
-    text-align: center;
-    /* display:inline-block; */
     vertical-align: middle;
-  }
-}
-@media all and (max-width: 568px) {
-  .header nav {
-    height: 50px;
-    width: 35%;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .header nav {
-    height: 50px;
-    width: 32%;
-  }
-}
-/* iPhone 5 sizes, landscape and portrait */
-@media all and (max-width: 320px) {
-  .header nav {
-    height: 50px;
-    width: 40%;
   }
 }
 
