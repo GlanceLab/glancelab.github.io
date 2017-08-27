@@ -1,10 +1,10 @@
 const amountScrolled = 300;
 
 $(document).ready(function() {
-  $(".header").hide();
-  setTimeout(function() {
-    $(".header").fadeIn();
-  }, 2500);
+  // $(".header").hide();
+  // setTimeout(function() {
+  //   $(".header").fadeIn();
+  // }, 2500);
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > amountScrolled) {
