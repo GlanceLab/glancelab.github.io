@@ -139,14 +139,13 @@ p {
 .header nav {
   /* display: inline=block; */
   float: right;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .header nav > a {
   line-height: 90px;
-  margin-left: 20px;
+  margin-right: 20px;
   color: #262626;
   font-size: 18px;
-  text-decoration: none;
   position: relative;
 }
 .header nav > a:hover {
