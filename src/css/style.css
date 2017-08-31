@@ -214,19 +214,21 @@ p {
   line-height: 40px;
   color: #262626
 }
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .section-content > div {
-      width: 100%;
-      justify-content: center;
-      align-content: center;
-    }
-    #story-image-1 {
-      height: 65%;
-      width: auto;
-    }
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .section-content > div {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  .section-header {
+    margin: 10px;
+  }
+  #story-image-1 {
+    height: 65%;
+    width: auto;
+  }
 }
 /* underline animation, only applicable to desktop */
 @media screen and (min-width: 800px) {
@@ -434,7 +436,7 @@ p {
   }
 }
 /* hide image when device is landscape */
-@media only screen 
+/* @media only screen 
 and (orientation:landscape) {
   .section-header {
     padding: 20px 0;
@@ -446,4 +448,4 @@ and (orientation:landscape) {
     height: 0;
     width: 0;
   }
-}
+} */
