@@ -151,6 +151,83 @@ p {
 .header nav > a:hover {
   color: #0f0f0f;
 }
+/* Hide the link that should open and close the topnav on small screens */
+.header .hamburgerMenu {
+  display: none;
+}
+
+/* section content */
+.section-content {
+  width: 100%;
+  padding: 60px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+}
+.section-content > div {
+  width: 50%;
+}
+.section-image {
+  display: flex;
+  align-content: center;
+}
+#story {
+  background-color: #fff
+}
+#story-image-1 {
+  height: 75%;
+  width: auto;
+}
+.paper-image {
+  box-shadow: 2px 5px 10px #888888;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+       -o-transition: all .5s ease;
+          transition: all .5s ease;
+}
+.paper-image:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+       transform: scale(1.1);
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: -50px;
+}
+.section-header-title {
+  font-size: 75px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.section-content-para {
+  margin: -40px 0 0 0;
+  font-size: 20px;
+  line-height: 40px;
+  color: #262626
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .section-content > div {
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+    }
+    #story-image-1 {
+      height: 65%;
+      width: auto;
+    }
+}
 /* underline animation, only applicable to desktop */
 @media screen and (min-width: 800px) {
   .header nav > a::before {
@@ -173,40 +250,6 @@ p {
     transform: scaleX(1);
   }
 }
-/* Hide the link that should open and close the topnav on small screens */
-.header .hamburgerMenu {
-  display: none;
-}
-
-/* section content */
-.section-content {
-  height: 110%;
-  width: 100%;
-}
-#story {
-  background-color: #fff
-}
-.section-header {
-  position: relative;
-  left: 0;
-  top: 10%;
-  width: 100%;
-  text-align: center;
-}
-.section-header-title {
-  font-size: 75px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #262626;
-}
-.section-content-para {
-  margin: 20px 80px 0 80px;
-  font-size: 20px;
-  line-height: 40px;
-  color: #262626
-}
-
-/* header media */
 @media all and (max-width: 800px) {
   .header {
     height: 50px;
@@ -257,6 +300,11 @@ p {
     height: 46px;
     font-size: 16px;
   }
+  .section-content > div {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 /* content media */
@@ -264,8 +312,21 @@ p {
   h1 {
     font-size: 70px;
   }
+  .section-header {
+    padding: 10px;
+  }
+  .section-content-para {
+    padding: 10px 0;
+  }
   .section-header-title {
     font-size: 60px;
+  }
+  .section-content > div {
+    width: 100%;
+  }
+  #story-image-1 {
+    height: 50%;
+    width: auto;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -274,6 +335,9 @@ p {
   }
   h1#mid::after {
     height: 8px;
+  }
+  .section-content {
+    padding: 20px;
   }
   .section-header-title {
     font-size: 40px;
@@ -287,6 +351,9 @@ p {
     height: 40px;
     font-size: 14px;
     border: solid 3px #262626;
+  }
+  .section-content > div {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -302,11 +369,17 @@ p {
   p {
     font-size: 18px;
   }
+  .section-content {
+    padding: 40px 20px;
+  }
+  .section-header {
+    padding: 60px 0;
+  }
   .section-header-title {
     font-size: 30px;
   }
   .section-content-para {
-    margin: 20px 12px 0 12px;
+    margin: 5px 0;
     font-size: 16px;
     line-height: 28px;
     color: #262626
@@ -317,6 +390,13 @@ p {
     font-size: 14px;
     border: solid 3px #262626;
   }
+  .section-content > div {
+    width: 100%;
+  }
+  #story-image-1 {
+    height: 50%;
+    width: auto;
+  }
 }
 @media only screen and (max-width: 320px) {
   h1 {
@@ -325,11 +405,16 @@ p {
   h1#mid::after {
     height: 4px;
   }
+  .section-content {
+    padding: 20px;
+  }
+  .section-header {
+    padding: 60px 0;
+  }
   .section-header-title {
     font-size: 28px;
   }
   .section-content-para {
-    margin: 20px 10px 0 10px;
     font-size: 14px;
     line-height: 28px;
     color: #262626
@@ -339,5 +424,26 @@ p {
     height: 40px;
     font-size: 14px;
     border: solid 3px #262626;
+  }
+  .section-content > div {
+    width: 100%;
+  }
+  #story-image-1 {
+    height: 50%;
+    width: auto;
+  }
+}
+/* hide image when device is landscape */
+@media only screen 
+and (orientation:landscape) {
+  .section-header {
+    padding: 20px 0;
+  }
+  .section-content-para {
+    padding: 20px 0;
+  }
+  #story-image-1 {
+    height: 0;
+    width: 0;
   }
 }
