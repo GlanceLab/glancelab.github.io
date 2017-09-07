@@ -159,7 +159,7 @@ p {
 /* section content */
 .section-content {
   width: 100%;
-  padding: 60px 80px;
+  padding: 100px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -177,7 +177,7 @@ p {
   background-color: #fff
 }
 #story-image-1 {
-  height: 75%;
+  height: 65%;
   width: auto;
 }
 .paper-image {
@@ -203,14 +203,14 @@ p {
   margin-top: -50px;
 }
 .section-header-title {
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #262626;
 }
 .section-content-para {
   margin: -40px 0 0 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   color: #262626
 }
