@@ -3,10 +3,16 @@
   border-right: .1em #fff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 2.8s steps(40, end),
-    blink-caret 1s step-end infinite;
 }
+
+/* only animate for desktop */
+/* @media screen and (min-width: 640px) {
+  .typewriter h1 {
+    animation: 
+      typing 2.8s steps(40, end),
+      blink-caret 1s step-end infinite;
+  }
+} */
 
 /* The typing effect */
 @keyframes typing {
